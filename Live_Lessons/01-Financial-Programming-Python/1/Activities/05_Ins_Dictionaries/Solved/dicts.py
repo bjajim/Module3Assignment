@@ -3,16 +3,15 @@
 
 This script showcases basic operations of Python Dicts.
 """
-top_traders_2021 = {
-    "january": "Karen", 
-    "february": "Harold",
-    "march": "Sam"
-    }
 
-print() # Remmeber this is to help with organized outputs in terminal. Could be dashes or whatever.
-print(f"Dictionary: {top_traders_2021}")
+# Initialize a dictionary containing top traders for each month in 2019
+top_traders_2019 = {"january": "Karen", "february": "Harold", "march": "Sam"}
+
+print()
+print(f"Dictionary: {top_traders_2019}")
 print()
 
+# Initialize a dictionary
 trading_pnl = {
     "title": "Trading Log",
     "03-18-2019": -224,
@@ -37,24 +36,30 @@ trading_pnl = {
     "04-06-2019": -311,
 }
 
+# Print out dictionary, initial print() to serve as spacing between command line input
 print()
 print(f"Dictionary: {trading_pnl}")
 print()
 
+# Print out specific value of a key
 print(f"03-31-2019: {trading_pnl['03-31-2019']}")
 print()
 
+# Add a new key-value pair
 trading_pnl["04-07-2019"] = 413
 print(trading_pnl)
 print()
 
+# Modify a key value
 trading_pnl["04-07-2019"] = 542
 print(trading_pnl)
 print()
 
+# Access a the value of a key using the get() method
 print(trading_pnl.get("03-29-2019"))
 print()
 
+# Delete a key-value pair
 del trading_pnl["04-07-2019"]
 print(trading_pnl)
 print()
