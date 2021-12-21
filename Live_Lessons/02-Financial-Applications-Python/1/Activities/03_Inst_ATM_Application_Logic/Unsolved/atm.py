@@ -26,3 +26,13 @@ accounts = [
 
 
 # Create the `login` function for the ATM application.
+
+def login(pin):
+    # loop through all the pins
+    for account in accounts:
+        if account['pin'] == int(pin): #types dont match, false
+            print(f"The account balance for PIN {account['pin']} is {account['balance']}.")
+            return account['balance']
+
+account_balance = login(123456) # we can double check this by calling the funciton and inputing a pin
+print(f"{account_balance}") # and then we can print out the account balance
